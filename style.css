@@ -1090,7 +1090,7 @@ li.newupdates, li.newcomment {
 .keyselected {
 	background-color: #eee !important;
 }
-#searchsubmit:hover, #submit:hover, input#comment-submit:hover {
+#searchsubmit:hover, #submit:hover, input#comment-submit:hover, .p2_button:hover, #cancel-comment-reply-link:hover  {
 	border-color: #555;
 }
 .discussion p {
@@ -1211,14 +1211,14 @@ h4, h5, h6 {
 }
 #main button, #main input[type="submit"], #postbox input[type="submit"], #postbox button, .p2_button, #cancel-comment-reply-link {
   color:#333 !important;
-  display: block;
+  display: inline-block;
   float: left;
-  margin-right: 5px !important;
   margin-top: 5px !important;
   font-size:12px;
   line-height:1.4em;
   padding:2px 8px;
   text-decoration:none !important;
+  cursor: pointer;
 }
 #main .controls {
 	font-size: 12px;
@@ -1397,7 +1397,7 @@ clear:left;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
-  padding: 0px 4px;
+  padding: 1px 4px 0;
   color: #fff;
   display: inline-block;
 }
@@ -1409,7 +1409,7 @@ clear:left;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
-  padding: 0px 4px;
+  padding: 1px 4px 0;
   color: #fff;
   display: inline-block;
 }

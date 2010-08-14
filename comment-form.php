@@ -1,17 +1,18 @@
-  <b>
-	    	<?php if ( is_user_logged_in() ) : ?>
-	    		<?php printf( __( '<a href="%1$s">%2$s</a>', 'p2' ), site_url( '/wp-admin/profile.php' ), p2_get_user_identity() ); ?> 
-	    	<?php endif; ?>
-	</b>
+  
 	
 	<?php if ( get_option( 'comment_registration' ) && !is_user_logged_in() ) : ?>
 
 		<p><?php printf( __( 'You must be <a href="%s">logged in</a> to post a comment.', 'p2'), site_url( '/wp-login.php?redirect_to=' . urlencode( get_permalink() ) ) ) ?></p>
     
 	<?php else : // current user is allowed to comment ?>
-
+    
  	   <form id="commentform" action="<?php echo site_url( 'wp-comments-post.php' ) ?>" method="post" name="commentform">
 	        <div class="form">
+  	          <b>
+              	<?php if ( is_user_logged_in() ) : ?>
+              		<?php printf( __( '<a href="%1$s">%2$s</a>', 'p2' ), site_url( '/wp-admin/profile.php' ), p2_get_user_identity() ); ?> 
+              	<?php endif; ?>
+  	          </b>
 	            <textarea id="comment" class="expand50-100" name="comment" cols ="45" rows="3"></textarea>
 	        </div>
 	

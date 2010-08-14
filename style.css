@@ -275,9 +275,7 @@ position: static;
 	position: relative;
 }
 #main .actions {
-	position: absolute;
-	right: 2px;
-	top: 0;
+	
 }
 .bottom_of_entry {
 	overflow: hidden;
@@ -312,7 +310,7 @@ h2 img {
 	list-style: none;
 	margin-left: 58px;
 	border-top: 1px solid #ddd;
-	margin-top: 20px;
+	padding-top: 20px;
 }
 #main ul.commentlist li {
 	list-style: none;
@@ -412,6 +410,7 @@ h2 img {
 }
 .commentcontent {
 	overflow: auto;
+	margin-right: 10px;
 }
 .commentlist {
 	margin-bottom: 5px;
@@ -1357,7 +1356,4 @@ form.textedit textarea {
 }
 div.possibly-related {
 clear:left;
-}
-.commentcontent p {
-  margin: 5px 0 10px 5px !important;
 }

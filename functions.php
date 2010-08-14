@@ -223,7 +223,7 @@ function p2_comments( $comment, $args, $echocomment = true ) {
 	$awaiting_message = $comment->comment_approved == '0'? '<p><em>'.__('Your comment is awaiting moderation.', 'p2').'</em></p>' : '';
 	$permalink = esc_url( get_comment_link() );
 	$permalink_text = __('Permalink', 'p2');
-	$date_time = p2_date_time_with_microformat('comment');
+	$date_time = human_time_diff(get_comment_time('U'), current_time('timestamp')) . ' ago';
 	$html = <<<HTML
 <li $comment_class id="comment-$id">
     <h4>

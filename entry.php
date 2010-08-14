@@ -110,7 +110,7 @@
 
 		<?php endif; ?>
 	<?php endif; ?>
-	<span class="actions">
+	<div class="actions">
 		<?php if ( !is_single() ) : ?>
 			<a href="<?php the_permalink() ?>" class="thepermalink"><?php _e( 'Permalink', 'p2' ) ?></a>
 			<?php echo post_reply_link( array( 'before' => ' | ', 'after' => '',  'reply_text' => __('Reply', 'p2'), 'add_below' => 'prologue'), get_the_id() ) ?>
@@ -121,6 +121,6 @@
 		<?php if ( current_user_can('edit_post', get_the_id() ) ) : ?>
 			| <a href="<?php echo ( get_edit_post_link( get_the_id() ) ) ?>" class="edit-post-link" rel="<?php the_ID() ?>"><?php _e( 'Edit', 'p2' ) ?></a>
 		<?php endif; ?>
-	</span>
+	</div>
 </li>
 <?php endif; ?>

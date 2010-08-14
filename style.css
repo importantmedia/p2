@@ -148,7 +148,7 @@ blockquote {
 .inputarea .selected {
 	display: block;
 }
-#postbox input#posttitle {
+#postbox input#posttitle, {
   font-weight: bold;
 }
 #postbox textarea#posttext {
@@ -1122,6 +1122,10 @@ li.newupdates, li.newcomment {
 #postbox-type-quote {
   border-top: 1px solid #D1D1D1;
   padding: 10px 0;
+}
+#postbox-type-post {
+  border-bottom: 1px solid #d1d1d1;
+  padding-bottom: 10px;
 }
 #wrapper {
 	background: url( i/sidebar_back.gif ) top right repeat-y;

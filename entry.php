@@ -16,6 +16,7 @@
   		get_the_author()
   	);
   ?>
+  <?php echo human_time_diff(get_the_time('U'), current_time('timestamp')) . ' ago'; ?>
   New Issue: <?php the_title(); ?>
 </li>
 <?php else : ?>

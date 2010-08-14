@@ -1,5 +1,21 @@
 <?php if ( 'issue' == p2_get_the_category() ) : ?>
 <li id="prologue-<?php the_ID(); ?>" <?php post_class( get_the_author_meta('ID') ); ?>>
+  <?php 
+  	printf( 
+  		'<a href="%1$s" title="%2$s">%3$s</a>',
+  		get_author_posts_url( p2_get_author_id() ),
+  		sprintf( __( 'Posts by %s', 'p2' ), esc_attr( p2_get_author_name() ) ),
+  		p2_get_user_avatar( array( 'user_id' => p2_get_author_id(), 'size' => 24 ) )
+  	);
+  ?>
+  <?php
+  	printf(
+  		'<a href="%1$s" title="%2$s">%3$s</a>',
+  		get_author_posts_url( p2_get_author_id() ),
+  		sprintf( __( 'Posts by %s', 'p2' ), p2_get_author_name() ),
+  		get_the_author()
+  	);
+  ?>
   New Issue: <?php the_title(); ?>
 </li>
 <?php else : ?>

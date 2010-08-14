@@ -1211,7 +1211,10 @@ h4, h5, h6 {
 }
 #main button, #main input[type="submit"], #postbox input[type="submit"], #postbox button, .p2_button, #cancel-comment-reply-link {
   color:#333 !important;
-  display:inline-block;
+  display: block;
+  float: left;
+  margin-right: 5px !important;
+  margin-top: 5px !important;
   font-size:12px;
   line-height:1.4em;
   padding:2px 8px;
@@ -1389,22 +1392,24 @@ clear:left;
 .issue-open {
   text-transform: uppercase;
   font-size: 10px;
-  margin-top: 7px;
+  margin-top: 6px;
   background-color: #939F6F;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
-  padding: 2px 4px;
+  padding: 0px 4px;
   color: #fff;
+  display: inline-block;
 }
 .issue-closed {
   text-transform: uppercase;
   font-size: 10px;
-  margin-top: 7px;
+  margin-top: 6px;
   background-color: #4773BF;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
-  padding: 2px 4px;
+  padding: 0px 4px;
   color: #fff;
+  display: inline-block;
 }

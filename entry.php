@@ -99,11 +99,11 @@
   	<?php endif; ?>
   	<?php wp_link_pages(); ?>
   	<div class="bottom_of_entry">&nbsp;</div>
-  </div>
-  <div class="pf">    
   	<?php if ( !p2_is_ajax_request() ) : ?>
   		<?php comments_template() ?>
   	<?php endif; ?>
+  </div>
+  <div class="pf">
   	<div id="action-<?php the_ID(); ?>" class="actions">
   		<?php if ( !is_single() ) : ?>
   			<a href="<?php the_permalink() ?>" class="thepermalink"><?php _e( 'Permalink', 'p2' ) ?></a>

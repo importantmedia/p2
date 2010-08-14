@@ -1,29 +1,3 @@
-<?php if ( 'issue' == p2_get_the_category() && !is_single() ) : ?>
-<li id="prologue-<?php the_ID(); ?>" <?php post_class( get_the_author_meta('ID') ); ?>>
-  <?php 
-  	printf( 
-  		'<a href="%1$s" title="%2$s">%3$s</a>',
-  		get_author_posts_url( p2_get_author_id() ),
-  		sprintf( __( 'Posts by %s', 'p2' ), esc_attr( p2_get_author_name() ) ),
-  		p2_get_user_avatar( array( 'user_id' => p2_get_author_id(), 'size' => 24 ) )
-  	);
-  ?>
-  <?php
-  	printf(
-  		'<a href="%1$s" title="%2$s">%3$s</a>',
-  		get_author_posts_url( p2_get_author_id() ),
-  		sprintf( __( 'Posts by %s', 'p2' ), p2_get_author_name() ),
-  		get_the_author()
-  	);
-  ?> - Issue - 
-  <span class="meta">
-    <?php echo human_time_diff(get_the_time('U'), current_time('timestamp')) . ' ago'; ?>
-  </span>
-  <div class="postcontent<?php if ( current_user_can( 'edit_post', get_the_id() ) ) : ?> editarea<?php endif ?>" id="content-<?php the_ID() ?>">
-    <a href="<?php the_permalink() ?>" class="issue_title"><?php the_title(); ?></a>
-  </div>
-</li>
-<?php else : ?>
 <li id="prologue-<?php the_ID(); ?>" <?php post_class( get_the_author_meta('ID') ); ?>>
   <div class="pc">
   		<?php if ( !is_page() ) : ?>
@@ -129,4 +103,3 @@
   	<?php endif; ?>
   </div>
 </li>
-<?php endif; ?>

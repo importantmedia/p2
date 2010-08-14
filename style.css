@@ -106,11 +106,11 @@ blockquote {
 #wrapper button, #wrapper input[type="submit"] {
 	border: solid;
 	border-width: 1px;
-	border-radius: 12px;
-	-webkit-border-radius: 14px;
-	-khtml-border-radius: 14px;
-	-moz-border-radius: 14px;
-	height: 28px;
+	border-radius: 2px;
+	-webkit-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-moz-border-radius: 3px;
+	height: 24px;
 	padding: 0 10px;
 }
 #main button {
@@ -388,13 +388,9 @@ h2 img {
 	padding: 0 !important;
 }
 #main #respond, .textedit {
-	padding: 14px 16px 12px;
-	margin-bottom: 10px;
-	margin-left: 64px;
-	-webkit-border-radius: 6px;
-	-khtml-border-radius: 6px;
-	-moz-border-radius: 6px;
-	border-radius: 6px;
+	padding: 0;
+	margin-bottom: 0px;
+	margin-top: 15px;
 }
 .textedit {
 	margin-left: 0;
@@ -1024,7 +1020,7 @@ h3 {
 	color: #555;
 }
 #main #respond, .textedit {
-	background: #f1f1f1;
+
 }
 #respond textarea, .textedit textarea {
 	border-color: #ccc;
@@ -1212,9 +1208,10 @@ h4, h5, h6 {
 	font-size: 1.6em;
 }
 #main button, #main input[type="submit"], #postbox input[type="submit"], #postbox button {
-	line-height: 27px;
-	font-size: 13px;
+	line-height: 22px;
+	font-size: 12px;
 	font-weight: bold;
+	padding-bottom: 2px;
 }
 #main .controls {
 	font-size: 12px;

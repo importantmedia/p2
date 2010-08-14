@@ -964,8 +964,8 @@ h3 {
 	border-color: #ccc;
 }
 #postbox textarea#posttext {
-	background: #fafafa;
-	border-color: #d1d1d1;
+	background: #fff;
+	border: 0;
 	color: #666;
 }
 #wrapper form input[type="text"] {
@@ -1424,3 +1424,16 @@ clear:left;
   display: inline !important;
   opacity: 1;
 } 
+
+#postbox-full {
+  background: #fff;
+  border: 1px solid #555;
+  padding: 5px;
+}
+
+#postbox-full input[type="text"]{
+  border: 0;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+}

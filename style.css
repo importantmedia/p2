@@ -1415,5 +1415,10 @@ clear:left;
 }
 
 .commentlist .actions {
-  visibility: hidden;
+  display: none;
+  margin-left: 10px;
+} 
+
+.commentlist .selected .actions {
+  display: inline-block !important;
 } 

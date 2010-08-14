@@ -23,7 +23,7 @@ jQuery(document).ready(function() {
 </script>
 
 <div id="postbox">
-    <div>
+    <div id="ptw">
   		<ul id="post-types">
   			<li><a id="status"<?php if ( $_GET['p'] == 'status' || !isset($_GET['p']) ) : ?> class="selected"<?php endif; ?> href="<?php echo site_url( '?p=status' ) ?>" title="<?php _e( 'Status Update', 'p2' ) ?>"><?php _e( 'Status Update', 'p2' ) ?></a></li>
   			<li><a id="post"<?php if ( $_GET['p'] == 'post' ) : ?> class="selected"<?php endif; ?> href="<?php echo site_url( '?p=post' ) ?>" title="<?php _e( 'Blog Post', 'p2' ) ?>"><?php _e( 'Blog Post', 'p2' ) ?></a></li>

@@ -834,17 +834,20 @@ div.entry {
 	margin-right: 8px;
 	margin-bottom: 4px;
 }
+
+#ptw:after{
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
 #post-types {
 	margin-left: 60px;
 	margin-bottom: 0px;
-}
-
-#post-types:after {
-    content: ".";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
+	display: block;
+	float: left;
 }
 
 #post-types li {

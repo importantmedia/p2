@@ -90,8 +90,8 @@
   <div class="pf">
   	<div id="action-<?php the_ID(); ?>" class="actions">
   		<?php if ( !is_single() ) : ?>
-  			<a href="<?php the_permalink() ?>" class="thepermalink"><?php _e( 'Permalink', 'p2' ) ?></a>
   			<?php echo post_reply_link( array( 'before' => ' ', 'after' => '',  'reply_text' => __('Reply', 'p2'), 'add_below' => 'action'), get_the_id() ) ?>
+  			<a href="<?php the_permalink() ?>" class="thepermalink"><?php _e( 'Permalink', 'p2' ) ?></a>
   		<?php else : ?>
   			<?php if( comments_open() ) echo post_reply_link( array( 'before' => '', 'after' => '',  'reply_text' => __('Reply', 'p2'), 'add_below' => 'action'), get_the_id() ) ?>
   		<?php endif;?>

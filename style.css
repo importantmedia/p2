@@ -41,6 +41,7 @@ pre, code {
 }
 #header {
 	min-height: 120px;
+	display: none;
 }
 #header .sleeve {
 	display: inline-block;
@@ -81,9 +82,9 @@ blockquote {
 }
 #header .sleeve, #wrapper, #footer {
 	border: 0;
-	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-	-webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-	-moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 3px #043D56;
+	-webkit-box-shadow: 0px 0px 3px #043D56;
+	-moz-box-shadow: 0px 0px 3px #043D56;
 }
 #header, #footer {
 	width: 980px;
@@ -279,7 +280,7 @@ position: static;
 }
 
 #main ul#postlist > li .pf {
-  padding: 10px;
+  padding: 5px;
   background-color: #D1DDEF;
   
   -webkit-border-bottom-right-radius: 3px;
@@ -894,6 +895,11 @@ div.entry {
 	cursor: default;
 }
 
+.discussion {
+  margin-left: 58px;
+  padding-top: 10px;
+}
+
 .discussion p a img {
 	padding: 0 !important;
 	border: none !important;
@@ -919,7 +925,7 @@ body {
 	background: #f1f1f1;
 }
 a, a:visited, h1 a:visited, a:active, #main .selected .actions a, #main .selected .actions a:link, #main .selected .actions a:visited, #help dt {
-	color: #3478e3;
+	color: #6282AF;
 	visibility: visible;
 }
 a:hover, h1 a:hover, #main .selected .actions a:hover, #main .selected .actions a:active {
@@ -1129,8 +1135,7 @@ li.newupdates, li.newcomment {
   padding-bottom: 10px;
 }
 #wrapper {
-	background: url( i/sidebar_back.gif ) top right repeat-y;
-	background-color: transparent;
+	background-color: #FCFDFF;
 }
 
 .sleeve_main {

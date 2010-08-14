@@ -10,7 +10,7 @@
     
 	<?php else : // current user is allowed to comment ?>
 
- 	   <form id="commentform" action="<?php echo site_url( 'wp-comments-post.php' ) ?>" method="post">
+ 	   <form id="commentform" action="<?php echo site_url( 'wp-comments-post.php' ) ?>" method="post" name="commentform">
 	        <div class="form">
 	            <textarea id="comment" class="expand50-100" name="comment" cols ="45" rows="3"></textarea>
 	        </div>
@@ -41,6 +41,7 @@
 	
 	        <div>
 	            <input id="comment-submit" name="submit" type="submit" value="<?php esc_attr_e( 'Reply', 'p2' ); ?>" />
+	            <a href="javascript:document.commentform.submit();" class="p2_button">Submit</a>
 	            <?php echo cancel_comment_reply_link('Cancel') ?>
 	            <?php comment_id_fields() ?>&nbsp;
 	            

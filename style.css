@@ -182,7 +182,7 @@ form#new_post {
   padding: 10px 0 0;
 }
 #postbox .avatar {
-	margin-top: 18px;
+	margin-top: 5px;
 }
 #media-buttons {
 	line-height: 22px;
@@ -836,10 +836,20 @@ div.entry {
 }
 #post-types {
 	margin-left: 60px;
-	margin-bottom: 10px;
+	margin-bottom: 0px;
 }
+
+#post-type::after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
 #post-types li {
-	display: inline;
+	display: block;
+	float: right;
 }
 #post-types li a {
   color:#333333 !important;

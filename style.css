@@ -274,7 +274,7 @@ position: static;
 
 #main ul#postlist > li .pf {
   padding: 10px;
-  background-color: #aaa;
+  background-color: #D1DDEF;
   
   -webkit-border-bottom-right-radius: 3px;
   -webkit-border-bottom-left-radius: 3px;
@@ -282,6 +282,10 @@ position: static;
   -moz-border-radius-bottomleft: 3px;
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
+}
+#main ul#postlist > li .pf a {
+  color: #043D56;
+  text-decoration: underline;
 }
 
 #main ul#postlist ul.commentlist li {
@@ -380,8 +384,8 @@ h2 img {
 }
 #postpage #respond {
 	width: 70%;
-	margin-bottom: 20px;
-	margin-left: 72px;
+	margin-top: 15px;
+	padding: 0 !important;
 }
 #main #respond, .textedit {
 	padding: 14px 16px 12px;

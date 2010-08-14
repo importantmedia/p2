@@ -15,9 +15,13 @@
   		sprintf( __( 'Posts by %s', 'p2' ), p2_get_author_name() ),
   		get_the_author()
   	);
-  ?>
-  <?php echo human_time_diff(get_the_time('U'), current_time('timestamp')) . ' ago'; ?>
-  New Issue: <?php the_title(); ?>
+  ?> - Issue - 
+  <span class="meta">
+    <?php echo human_time_diff(get_the_time('U'), current_time('timestamp')) . ' ago'; ?>
+  </span>
+  <div class="postcontent<?php if ( current_user_can( 'edit_post', get_the_id() ) ) : ?> editarea<?php endif ?>" id="content-<?php the_ID() ?>">
+    <?php the_title(); ?>
+  </div>
 </li>
 <?php else : ?>
 <li id="prologue-<?php the_ID(); ?>" <?php post_class( get_the_author_meta('ID') ); ?>>

@@ -1358,3 +1358,6 @@ form.textedit textarea {
 div.possibly-related {
 clear:left;
 }
+.commentcontent p {
+  margin: 5px 0 10px 5px;
+}

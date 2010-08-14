@@ -258,7 +258,7 @@ position: static;
 	overflow: visible;
 	border: 1px solid #bbb;
 	padding: 10px;
-	margin-bottom: 0 10px 20px;
+	margin: 0 10px 20px;
 }
 #main ul#postlist ul.commentlist li {
 	border-top-style: solid;

@@ -20,7 +20,7 @@
     <?php echo human_time_diff(get_the_time('U'), current_time('timestamp')) . ' ago'; ?>
   </span>
   <div class="postcontent<?php if ( current_user_can( 'edit_post', get_the_id() ) ) : ?> editarea<?php endif ?>" id="content-<?php the_ID() ?>">
-    <?php the_title(); ?>
+    <a href="<?php the_permalink() ?>" class="issue_title"><?php the_title(); ?></a>
   </div>
 </li>
 <?php else : ?>

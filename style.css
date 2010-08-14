@@ -256,9 +256,9 @@ position: static;
 }
 #main ul#postlist li {
 	overflow: visible;
-	border-top-style: solid;
-	border-top-width: 1px;
-	padding: 14px 0 0;
+	border: 1px solid #bbb;
+	padding: 10px;
+	margin-bottom: 0 10px 20px;
 }
 #main ul#postlist ul.commentlist li {
 	border-top-style: solid;
@@ -920,7 +920,7 @@ h3 {
 	border-color: #ccc;
 }
 #main #postlist li {
-	border-top-color: #bbb;
+	
 }
 #main #postlist .commentlist li {
 	border-top-color: #ddd;

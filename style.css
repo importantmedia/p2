@@ -36,6 +36,9 @@ dd {
 pre, code {
 	overflow: auto;
 }
+:focus {
+  outline: none !important;
+}
 #header {
 	min-height: 120px;
 }
@@ -961,7 +964,6 @@ h3 {
 }
 #wrapper {
 	background: #fff;
-	border-color: #fff;
 }
 #postbox .avatar img {
 	border-color: #ccc;
@@ -1109,7 +1111,6 @@ li.newupdates, li.newcomment {
 #wrapper {
 	background: url( i/sidebar_back.gif ) top right repeat-y;
 	background-color: transparent;
-	border: 1px solid #fff;
 }
 
 .sleeve_main {
@@ -1121,7 +1122,7 @@ li.newupdates, li.newcomment {
 }
 
 #postbox {
-	background: url( i/white-93.png );
+	background-color: #9BB0CF;
 	margin-right: -1px;
 }
 
@@ -1415,7 +1416,7 @@ clear:left;
 }
 
 .commentlist .actions {
-  display: none;
+  opacity: 0;
   margin-left: 2px;
 } 
 
@@ -1426,4 +1427,5 @@ clear:left;
 
 .commentlist .selected .actions {
   display: inline !important;
+  opacity: 1;
 } 

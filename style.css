@@ -182,7 +182,7 @@ form#new_post {
   padding: 10px 0 0;
 }
 #postbox .avatar {
-	margin-top: 5px;
+	margin-top: 0px;
 }
 #media-buttons {
 	line-height: 22px;
@@ -839,7 +839,7 @@ div.entry {
 	margin-left: 60px;
 	margin-bottom: 0px;
 	display: block;
-	float: left;
+	height: 15px;
 }
 
 #post-types li {
@@ -850,15 +850,13 @@ div.entry {
   color:#333333 !important;
   cursor:pointer;
   font-size:12px;
-  line-height:1.45em;
-  margin-top:5px !important;
-  padding:2px 8px;
+  line-height: 1.6em;
+  padding:0px 8px;
   text-decoration:none !important;
   background:url("./i/white-grad.png") repeat-x scroll 0 0 #F2F2F2;
   border-color:#CCCCCC;
-  text-shadow:0 1px 0 #FFFFFF;
-  -moz-border-radius:3px 3px 3px 3px;
-  border:1px solid;
+  text-shadow: 0 1px 0 #FFFFFF;
+  border-width: 1px 1px 1px 0;
   display: block;
 }
 #post-types li a:active {

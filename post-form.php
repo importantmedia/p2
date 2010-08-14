@@ -32,6 +32,7 @@ jQuery(document).ready(function() {
   			<li><a id="issue"<?php if ( $_GET['p'] == 'issue' ) : ?> class="selected"<?php endif; ?> href="<?php echo site_url( '?p=issue' ) ?>" title="<?php _e( 'Issue', 'p2' ) ?>"><?php _e( 'Issue', 'p2' ) ?></a></li>
   		</ul>
     </div>
+    <div class="clear"></div>
 		<div class="avatar">
 			<?php p2_user_avatar( 'size=48' ) ?>
 		</div>

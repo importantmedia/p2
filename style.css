@@ -835,13 +835,6 @@ div.entry {
 	margin-bottom: 4px;
 }
 
-#ptw:after{
-  content: ".";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-}
 
 #post-types {
 	margin-left: 60px;

@@ -23,7 +23,7 @@ jQuery(document).ready(function() {
 </script>
 
 <div id="postbox">
-    <div id="ptw">
+    
   		<ul id="post-types">
   			<li><a id="status"<?php if ( $_GET['p'] == 'status' || !isset($_GET['p']) ) : ?> class="selected"<?php endif; ?> href="<?php echo site_url( '?p=status' ) ?>" title="<?php _e( 'Status Update', 'p2' ) ?>"><?php _e( 'Status Update', 'p2' ) ?></a></li>
   			<li><a id="post"<?php if ( $_GET['p'] == 'post' ) : ?> class="selected"<?php endif; ?> href="<?php echo site_url( '?p=post' ) ?>" title="<?php _e( 'Blog Post', 'p2' ) ?>"><?php _e( 'Blog Post', 'p2' ) ?></a></li>
@@ -31,8 +31,7 @@ jQuery(document).ready(function() {
   			<li><a id="link"<?php if ( $_GET['p'] == 'link' ) : ?> class="selected"<?php endif; ?> href="<?php echo site_url( '?p=link' ) ?>" title="<?php _e( 'Link', 'p2' ) ?>"><?php _e( 'Link', 'p2' ) ?></a></li>
   			<li><a id="issue"<?php if ( $_GET['p'] == 'issue' ) : ?> class="selected"<?php endif; ?> href="<?php echo site_url( '?p=issue' ) ?>" title="<?php _e( 'Issue', 'p2' ) ?>"><?php _e( 'Issue', 'p2' ) ?></a></li>
   		</ul>
-    </div>
-    <div class="clear"></div>
+    <div id="ptw">
 		<div class="avatar">
 			<?php p2_user_avatar( 'size=48' ) ?>
 		</div>
@@ -78,7 +77,7 @@ jQuery(document).ready(function() {
 			</form>
 
 		</div>
-
+    </div>
 		<div class="clear"></div>
 
 </div> <!-- // postbox -->

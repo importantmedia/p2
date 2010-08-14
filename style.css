@@ -1420,9 +1420,10 @@ clear:left;
 } 
 
 .commentlist .actions a {
-  margin-right: 0px;
+  margin-right: 0px !important;
+  color: #ccc !important;
 } 
 
 .commentlist .selected .actions {
-  display: inline-block !important;
+  display: inline !important;
 } 

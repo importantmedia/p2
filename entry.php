@@ -1,4 +1,4 @@
-<?php if ( 'issue' == p2_get_the_category() ) : ?>
+<?php if ( 'issue' == p2_get_the_category() && !is_single() ) : ?>
 <li id="prologue-<?php the_ID(); ?>" <?php post_class( get_the_author_meta('ID') ); ?>>
   <?php 
   	printf( 
@@ -110,12 +110,12 @@
 
 		<?php endif; ?>
 	<?php endif; ?>
-	<div class="actions">
+	<div id="action-<?php the_ID(); ?>" class="actions">
 		<?php if ( !is_single() ) : ?>
 			<a href="<?php the_permalink() ?>" class="thepermalink"><?php _e( 'Permalink', 'p2' ) ?></a>
 			<?php echo post_reply_link( array( 'before' => ' | ', 'after' => '',  'reply_text' => __('Reply', 'p2'), 'add_below' => 'prologue'), get_the_id() ) ?>
 		<?php else : ?>
-			<?php if( comments_open() ) echo post_reply_link( array( 'before' => '', 'after' => '',  'reply_text' => __('Reply', 'p2'), 'add_below' => 'prologue'), get_the_id() ) ?>
+			<?php if( comments_open() ) echo post_reply_link( array( 'before' => '', 'after' => '',  'reply_text' => __('Reply', 'p2'), 'add_below' => 'action'), get_the_id() ) ?>
 		<?php endif;?>
 		
 		<?php if ( current_user_can('edit_post', get_the_id() ) ) : ?>

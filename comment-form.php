@@ -41,7 +41,7 @@
 	
 	        <div>
 	            <!--<input id="comment-submit" name="submit" type="submit" value="<?php esc_attr_e( 'Reply', 'p2' ); ?>" />-->
-	            <a href="javascript:document.commentform.submit();" id="comment-submit" class="p2_button" value="<?php esc_attr_e( 'Reply', 'p2' ); ?>"><?php esc_attr_e( 'Reply', 'p2' ); ?></a>
+	            <a href="javascript://" id="comment-submit" class="p2_button" value="<?php esc_attr_e( 'Reply', 'p2' ); ?>"><?php esc_attr_e( 'Reply', 'p2' ); ?></a>
 	            <?php echo cancel_comment_reply_link('Cancel') ?>
 	            <?php comment_id_fields() ?>&nbsp;
 	            

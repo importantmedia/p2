@@ -103,7 +103,7 @@ blockquote {
 	margin-top: 20px;
 	overflow: hidden;
 }
-#wrapper button, #wrapper input[type="submit"] {
+#wrapper button, #wrapper input[type="submit"], .p2_button {
 	border: solid;
 	border-width: 1px;
 	border-radius: 2px;
@@ -983,7 +983,7 @@ h3 {
 	color: #444;
 	float: left;
 }
-#wrapper button, #wrapper input[type="submit"] {
+#wrapper button, #wrapper input[type="submit"], .p2_button {
 	border-color: #ccc;
 	background: #F2F2F2 url(./i/white-grad.png) repeat-x;
 	color: #333;
@@ -1207,7 +1207,7 @@ h4, h5, h6 {
 	font-weight: normal;
 	font-size: 1.6em;
 }
-#main button, #main input[type="submit"], #postbox input[type="submit"], #postbox button {
+#main button, #main input[type="submit"], #postbox input[type="submit"], #postbox button, .p2_button {
 	line-height: 22px;
 	font-size: 12px;
 	font-weight: bold;
@@ -1378,4 +1378,6 @@ clear:left;
 .commentcontent p {
   margin-top: 0;
 }
-
+.actions a {
+  margin-right: 10px !important;
+}

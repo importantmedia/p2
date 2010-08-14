@@ -1,15 +1,6 @@
-    <h3>
-		<?php _e( 'Reply', 'p2' ) ?> 
-		
 		<small id="cancel-comment-reply">
-			<?php echo cancel_comment_reply_link() ?>
-    	
 	    	<?php if ( is_user_logged_in() ) : ?>
-	    		(<?php printf( __( 'Logged in as <a href="%1$s">%2$s</a>.', 'p2' ), site_url( '/wp-admin/profile.php' ), p2_get_user_identity() ); ?> 
-				
-				<a href="<?php echo wp_logout_url( get_permalink() ) ?>" title="<?php esc_attr_e( 'Log out of this account', 'p2' ); ?>">
-					<?php _e( 'Log out &rarr;', 'p2'); ?>
-				</a>)
+	    		<?php printf( __( '<a href="%1$s">%2$s</a>', 'p2' ), site_url( '/wp-admin/profile.php' ), p2_get_user_identity() ); ?> 
 	    	<?php endif; ?>
 		</small>
 	</h3>
@@ -51,6 +42,7 @@
 	
 	        <div>
 	            <input id="comment-submit" name="submit" type="submit" value="<?php esc_attr_e( 'Reply', 'p2' ); ?>" />
+	            <?php echo cancel_comment_reply_link() ?>
 	            <?php comment_id_fields() ?>&nbsp;
 	            
 				<span class="progress">

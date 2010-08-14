@@ -311,8 +311,8 @@ h2 img {
 #main ul.commentlist {
 	list-style: none;
 	margin-left: 58px;
-	border-top: 0;
-	margin-top: 0;
+	border-top: 1px solid #ddd;
+	margin-top: 20px;
 }
 #main ul.commentlist li {
 	list-style: none;
@@ -1359,5 +1359,5 @@ div.possibly-related {
 clear:left;
 }
 .commentcontent p {
-  margin: 5px 0 10px 5px;
+  margin: 5px 0 10px 5px !important;
 }

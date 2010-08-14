@@ -50,18 +50,6 @@
 				<?php if ( !is_page() ) : ?>
 					<?php echo p2_date_time_with_microformat() ?>
 				<?php endif; ?>
-				<span class="actions">
-					<?php if ( !is_single() ) : ?>
-						<a href="<?php the_permalink() ?>" class="thepermalink"><?php _e( 'Permalink', 'p2' ) ?></a>
-						<?php echo post_reply_link( array( 'before' => ' | ', 'after' => '',  'reply_text' => __('Reply', 'p2'), 'add_below' => 'prologue'), get_the_id() ) ?>
-					<?php else : ?>
-						<?php if( comments_open() ) echo post_reply_link( array( 'before' => '', 'after' => '',  'reply_text' => __('Reply', 'p2'), 'add_below' => 'prologue'), get_the_id() ) ?>
-					<?php endif;?>
-					
-					<?php if ( current_user_can('edit_post', get_the_id() ) ) : ?>
-						| <a href="<?php echo ( get_edit_post_link( get_the_id() ) ) ?>" class="edit-post-link" rel="<?php the_ID() ?>"><?php _e( 'Edit', 'p2' ) ?></a>
-					<?php endif; ?>
-				</span>
 			<?php if ( !is_page() ) : ?>
 				<span class="tags">
 					<?php tags_with_count( '', __( '<br />Tags:' , 'p2' ) .' ', ', ', ' &nbsp;' ) ?>&nbsp;
@@ -110,7 +98,7 @@
 	<?php endif; ?>
 	<?php wp_link_pages(); ?>
 	<div class="bottom_of_entry">&nbsp;</div>
-
+  
 	<?php if ( !p2_is_ajax_request() ) : ?>
 		<?php comments_template() ?>
 		<?php $pc = 0; ?>
@@ -121,7 +109,18 @@
 				</div>
 
 		<?php endif; ?>
-
 	<?php endif; ?>
+	<span class="actions">
+		<?php if ( !is_single() ) : ?>
+			<a href="<?php the_permalink() ?>" class="thepermalink"><?php _e( 'Permalink', 'p2' ) ?></a>
+			<?php echo post_reply_link( array( 'before' => ' | ', 'after' => '',  'reply_text' => __('Reply', 'p2'), 'add_below' => 'prologue'), get_the_id() ) ?>
+		<?php else : ?>
+			<?php if( comments_open() ) echo post_reply_link( array( 'before' => '', 'after' => '',  'reply_text' => __('Reply', 'p2'), 'add_below' => 'prologue'), get_the_id() ) ?>
+		<?php endif;?>
+		
+		<?php if ( current_user_can('edit_post', get_the_id() ) ) : ?>
+			| <a href="<?php echo ( get_edit_post_link( get_the_id() ) ) ?>" class="edit-post-link" rel="<?php the_ID() ?>"><?php _e( 'Edit', 'p2' ) ?></a>
+		<?php endif; ?>
+	</span>
 </li>
 <?php endif; ?>

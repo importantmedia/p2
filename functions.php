@@ -229,8 +229,7 @@ function p2_comments( $comment, $args, $echocomment = true ) {
     <h4>
         $author_link
         <span class="meta">
-            $date_time
-            <span class="actions"><a href="$permalink">$permalink_text</a> $reply_link $edit_link</span>
+            - $date_time<span class="actions"> - <a href="$permalink">$permalink_text</a>$edit_link $reply_link</span>
         </span>
     </h4>
     <div class="$content_class" id="commentcontent-$id">

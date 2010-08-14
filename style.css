@@ -171,16 +171,11 @@ form#new_post {
 }
 #postbox input#tags {
 	width: 75%;
-	float: left;
 }
 #postbox input#submit {
-	margin-left: 6px;
-	padding: 0 20px;
-	float: right;
+
 }
-#postbox .postrow {
-	height: 28px;
-}
+#postbox .postrow {}
 #postbox .avatar {
 	margin-top: 18px;
 }

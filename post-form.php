@@ -38,31 +38,33 @@ jQuery(document).ready(function() {
 		<div class="inputarea">
 
 			<form id="new_post" name="new_post" method="post" action="<?php echo site_url(); ?>/">
-				<div id="postbox-type-post" class="post-input <?php if ( 'post' == p2_get_posting_type() ) echo ' selected'; ?>">
-					<input type="text" name="posttitle" id="posttitle" tabindex="1" value=""
-						onfocus="this.value=(this.value=='<?php echo esc_js( __( 'Post Title', 'p2' ) ); ?>') ? '' : this.value;"
-						onblur="this.value=(this.value=='') ? '<?php echo esc_js( __( 'Post Title', 'p2' ) ); ?>' : this.value;" />
-				</div>
-				<textarea class="expand70-200" name="posttext" id="posttext" tabindex="1" rows="3" cols="60"></textarea>
-				<div id="postbox-type-quote" class="post-input <?php if ( 'quote' == p2_get_posting_type() ) echo " selected"; ?>">
-					<label for="postcitation" class="invisible"><?php _e( 'Citation', 'p2' ); ?></label>
-						<input id="postcitation" name="postcitation" type="text" tabindex="2"
-							value="<?php esc_attr_e( 'Citation', 'p2' ); ?>"
-							onfocus="this.value=(this.value=='<?php echo esc_js( __( 'Citation', 'p2' ) ); ?>') ? '' : this.value;"
-							onblur="this.value=(this.value=='') ? '<?php echo esc_js( __( 'Citation', 'p2' ) ); ?>' : this.value;" />
-				</div>
-				<label class="post-error" for="posttext" id="posttext_error"></label>
-				<div class="postrow">
-					<input id="tags" name="tags" type="text" tabindex="2" autocomplete="off"
-						value="<?php esc_attr_e( 'Add tags', 'p2' ); ?>"
-						onfocus="this.value=(this.value=='<?php echo esc_js( __( 'Add tags', 'p2' ) ); ?>') ? '' : this.value;"
-						onblur="this.value=(this.value=='') ? '<?php echo esc_js( __( 'Add tags', 'p2' ) ); ?>' : this.value;" />
-				</div>
-				<?php if ( current_user_can( 'upload_files' ) ): ?>
-				<div id="media-buttons" class="hide-if-no-js">
-					<?php echo P2::media_buttons(); ?>
-				</div>
-				<?php endif; ?>
+			  <div id="postbox-full">
+  				<div id="postbox-type-post" class="post-input <?php if ( 'post' == p2_get_posting_type() ) echo ' selected'; ?>">
+  					<input type="text" name="posttitle" id="posttitle" tabindex="1" value=""
+  						onfocus="this.value=(this.value=='<?php echo esc_js( __( 'Post Title', 'p2' ) ); ?>') ? '' : this.value;"
+  						onblur="this.value=(this.value=='') ? '<?php echo esc_js( __( 'Post Title', 'p2' ) ); ?>' : this.value;" />
+  				</div>
+  				<textarea class="expand70-200" name="posttext" id="posttext" tabindex="1" rows="3" cols="60"></textarea>
+  				<div id="postbox-type-quote" class="post-input <?php if ( 'quote' == p2_get_posting_type() ) echo " selected"; ?>">
+  					<label for="postcitation" class="invisible"><?php _e( 'Citation', 'p2' ); ?></label>
+  						<input id="postcitation" name="postcitation" type="text" tabindex="2"
+  							value="<?php esc_attr_e( 'Citation', 'p2' ); ?>"
+  							onfocus="this.value=(this.value=='<?php echo esc_js( __( 'Citation', 'p2' ) ); ?>') ? '' : this.value;"
+  							onblur="this.value=(this.value=='') ? '<?php echo esc_js( __( 'Citation', 'p2' ) ); ?>' : this.value;" />
+  				</div>
+  				<label class="post-error" for="posttext" id="posttext_error"></label>
+  				<div class="postrow">
+  					<input id="tags" name="tags" type="text" tabindex="2" autocomplete="off"
+  						value="<?php esc_attr_e( 'Add tags', 'p2' ); ?>"
+  						onfocus="this.value=(this.value=='<?php echo esc_js( __( 'Add tags', 'p2' ) ); ?>') ? '' : this.value;"
+  						onblur="this.value=(this.value=='') ? '<?php echo esc_js( __( 'Add tags', 'p2' ) ); ?>' : this.value;" />
+  					<?php if ( current_user_can( 'upload_files' ) ): ?>
+  					<div id="media-buttons" class="hide-if-no-js">
+  						<?php echo P2::media_buttons(); ?>
+  					</div>
+  					<?php endif; ?>
+  				</div>
+  			</div>
 				<input id="submit" type="submit" tabindex="3" value="<?php esc_attr_e( 'Post it', 'p2' ); ?>" />
 				<input type="hidden" name="post_cat" id="post_cat" value="<?php echo ( isset( $_GET['p'] ) ) ? esc_attr( $_GET['p'] ) : 'status' ?>" />
 				<span class="progress" id="ajaxActivity">

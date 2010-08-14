@@ -49,13 +49,14 @@
   			<?php endif; ?>
   			<span class="meta">
   				<?php if ( !is_page() ) : ?>
-  					<?php echo p2_date_time_with_microformat() ?>
+  				  <span class="category"> - <?php echo p2_get_the_category() ?></span> - 
+  					<?php echo human_time_diff(get_the_time('U'), current_time('timestamp')) . ' ago'; ?>
   				<?php endif; ?>
-  			<?php if ( !is_page() ) : ?>
-  				<span class="tags">
-  					<?php tags_with_count( '', __( '<br />Tags:' , 'p2' ) .' ', ', ', ' &nbsp;' ) ?>&nbsp;
-  				</span>
-  			<?php endif; ?>
+    			<?php if ( !is_page() ) : ?>
+    				<span class="tags">
+    					<?php tags_with_count( '', __( '<br />Tags:' , 'p2' ) .' ', ', ', ' &nbsp;' ) ?>&nbsp;
+    				</span>
+    			<?php endif; ?>
   			</span>
   		</h4>
   	

@@ -864,7 +864,7 @@ div.entry {
 #post-types li:first-child a {
   border-left: 1px solid #ccc;
 }
-
+ 
 #post-types li a:hover {
   border: 1px solid #aaa;
 }

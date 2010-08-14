@@ -1,6 +1,6 @@
 <?php if ( 'issue' == p2_get_the_category() ) : ?>
 <li id="prologue-<?php the_ID(); ?>" <?php post_class( get_the_author_meta('ID') ); ?>>
-  New Issue: <?php p2_title(); ?>
+  New Issue: <?php the_title(); ?>
 </li>
 <?php else : ?>
 <li id="prologue-<?php the_ID(); ?>" <?php post_class( get_the_author_meta('ID') ); ?>>

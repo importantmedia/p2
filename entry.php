@@ -101,19 +101,11 @@
   
 	<?php if ( !p2_is_ajax_request() ) : ?>
 		<?php comments_template() ?>
-		<?php $pc = 0; ?>
-		<?php if ( p2_show_comment_form() && $pc == 0) : ?>
-				<?php $pc++; ?>
-				<div id="respond" <?php if( !is_singular() ): ?>style="display: none; "<?php endif; ?>>
-					<?php locate_template( array( 'comment-form.php' ), true ) ?>
-				</div>
-
-		<?php endif; ?>
 	<?php endif; ?>
 	<div id="action-<?php the_ID(); ?>" class="actions">
 		<?php if ( !is_single() ) : ?>
 			<a href="<?php the_permalink() ?>" class="thepermalink"><?php _e( 'Permalink', 'p2' ) ?></a>
-			<?php echo post_reply_link( array( 'before' => ' | ', 'after' => '',  'reply_text' => __('Reply', 'p2'), 'add_below' => 'prologue'), get_the_id() ) ?>
+			<?php echo post_reply_link( array( 'before' => ' | ', 'after' => '',  'reply_text' => __('Reply', 'p2'), 'add_below' => 'action'), get_the_id() ) ?>
 		<?php else : ?>
 			<?php if( comments_open() ) echo post_reply_link( array( 'before' => '', 'after' => '',  'reply_text' => __('Reply', 'p2'), 'add_below' => 'action'), get_the_id() ) ?>
 		<?php endif;?>
@@ -122,5 +114,15 @@
 			| <a href="<?php echo ( get_edit_post_link( get_the_id() ) ) ?>" class="edit-post-link" rel="<?php the_ID() ?>"><?php _e( 'Edit', 'p2' ) ?></a>
 		<?php endif; ?>
 	</div>
+	<?php if ( !p2_is_ajax_request() ) : ?>
+	  <?php $pc = 0; ?>
+		<?php if ( p2_show_comment_form() && $pc == 0) : ?>
+				<?php $pc++; ?>
+				<div id="respond" <?php if( !is_singular() ): ?>style="display: none; "<?php endif; ?>>
+					<?php locate_template( array( 'comment-form.php' ), true ) ?>
+				</div>
+
+		<?php endif; ?>
+	<?php endif; ?>
 </li>
 <?php endif; ?>

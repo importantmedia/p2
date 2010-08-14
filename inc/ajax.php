@@ -158,7 +158,7 @@ class P2Ajax {
 		require_once ( ABSPATH . '/wp-admin/includes/taxonomy.php' );
 		require_once ( ABSPATH . WPINC . '/category.php' );
 		
-		$accepted_post_cats = apply_filters( 'p2_accepted_post_cats', array( 'post', 'quote', 'status', 'link' ) );
+		$accepted_post_cats = apply_filters( 'p2_accepted_post_cats', array( 'post', 'quote', 'status', 'link', 'issue' ) );
 		$post_cat = ( in_array( $_POST['post_cat'], $accepted_post_cats ) ) ? $_POST['post_cat'] : 'post';
 		
 		if ( !category_exists( $post_cat ) )

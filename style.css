@@ -56,6 +56,15 @@ blockquote {
 	background: #f1f1f1;
 	padding: 2px 12px;
 }
+
+#postbox-full input[type="text"]{
+  border: 0;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  height: 22px;
+}
+
 .category-quote blockquote {
 	margin-bottom: 8px;
 	background: transparent;
@@ -175,7 +184,10 @@ form#new_post {
 #postbox input#submit {
 
 }
-#postbox .postrow {}
+#postbox .postrow {
+  border-top: 1px solid #D1D1D1;
+  padding: 10px 0 0;
+}
 #postbox .avatar {
 	margin-top: 18px;
 }
@@ -1427,13 +1439,7 @@ clear:left;
 
 #postbox-full {
   background: #fff;
-  border: 1px solid #555;
-  padding: 5px;
+  border: 1px solid #D1D1D1;;
+  padding: 10px;
 }
 
-#postbox-full input[type="text"]{
-  border: 0;
-  background: #fff;
-  margin: 0;
-  padding: 0;
-}

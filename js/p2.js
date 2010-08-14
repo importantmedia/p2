@@ -39,7 +39,7 @@ jQuery(function($) {
 	* Insert new comment inline
 	*/
 	function insertCommentInline(postParent, comment_parent, commentHtml, showNotification) {
-		postParent = "#"+postParent;
+		postParent = "#"+postParent+' .pc';
 		 $(postParent).children('ul.commentlist').show();
 		 $(postParent).children('.discussion').hide();
 		if (0 == comment_parent) {

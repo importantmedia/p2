@@ -54,7 +54,16 @@
   			
   			<?php p2_title() ?>
   			<?php the_content( __( '(More ...)' , 'p2' ) ); ?>
-  			
+  		
+  		<?php elseif ( 'issue' == p2_get_the_category() ) : ?>
+  		  <?php if( comments_open() ) : ?>
+  		  <span class="issue-open">Issue Open</span>
+  		  <?php else : ?>
+  		  <span class="issue-closed">Issue Closed</span>
+  		  <?php endif; ?>
+  		  <?php p2_title() ?>
+  		  <?php the_content( __( '(More ...)' , 'p2' ) ); ?>
+  		
   		<?php else : ?>
   			
   			<?php p2_title(); ?>

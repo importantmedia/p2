@@ -649,4 +649,3 @@ function p2_hidden_sidebar_css() {
 	<?php endif;
 }
 add_action( 'wp_head', 'p2_hidden_sidebar_css' );
-

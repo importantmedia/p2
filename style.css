@@ -1208,10 +1208,12 @@ h4, h5, h6 {
 	font-size: 1.6em;
 }
 #main button, #main input[type="submit"], #postbox input[type="submit"], #postbox button, .p2_button, #cancel-comment-reply-link {
-	line-height: 22px;
-	font-size: 12px;
-	font-weight: bold;
-	padding-bottom: 2px;
+  color:#333 !important;
+  display:inline-block;
+  font-size:12px;
+  line-height:1.4em;
+  padding:2px 8px;
+  text-decoration:none !important;
 }
 #main .controls {
 	font-size: 12px;

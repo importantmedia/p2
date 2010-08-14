@@ -1385,3 +1385,24 @@ clear:left;
 .actions a {
   margin-right: 10px !important;
 }
+
+.issue-open {
+  text-transform: uppercase;
+  font-size: 10px;
+  margin-top: 7px;
+  background-color: #939F6F;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  padding: 2px 4px;
+}
+.issue-open {
+  text-transform: uppercase;
+  font-size: 10px;
+  margin-top: 7px;
+  background-color: #043D56;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  padding: 2px 4px;
+}

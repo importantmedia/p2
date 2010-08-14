@@ -1416,7 +1416,11 @@ clear:left;
 
 .commentlist .actions {
   display: none;
-  margin-left: 10px;
+  margin-left: 2px;
+} 
+
+.commentlist .actions a {
+  margin-right: 0px;
 } 
 
 .commentlist .selected .actions {

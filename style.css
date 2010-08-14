@@ -264,8 +264,8 @@ position: static;
 	border-radius: 3px;
 	background-color: #fff;
 	box-shadow: 0 0 3px #B5BECF;
-	-moz-box-shadow: 0 0 #B5BECF;
-	-webkit-box-shadow: 0 0 #B5BECF;
+	-moz-box-shadow: 0 0 3px #B5BECF;
+	-webkit-box-shadow: 0 0 3px #B5BECF;
 }
 #main ul#postlist ul.commentlist li {
 	display: block;

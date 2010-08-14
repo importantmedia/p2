@@ -226,7 +226,6 @@ function p2_comments( $comment, $args, $echocomment = true ) {
 	$date_time = p2_date_time_with_microformat('comment');
 	$html = <<<HTML
 <li $comment_class id="comment-$id">
-    $avatar
     <h4>
         $author_link
         <span class="meta">

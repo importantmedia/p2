@@ -259,17 +259,15 @@ position: static;
 	border: 1px solid #bbb;
 	padding: 10px;
 	margin-bottom: 20px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	
-	box-shadow: 0 0 4px rgba(0,0,0,0.3);
-	-moz-box-shadow: 0 0 4px rgba(0,0,0,0.3);
-	-webkit-box-shadow: 0 0 4px rgba(0,0,0,0.3);
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background-color: #fff;
+	box-shadow: 0 0 3px #B5BECF;
+	-moz-box-shadow: 0 0 #B5BECF;
+	-webkit-box-shadow: 0 0 #B5BECF;
 }
 #main ul#postlist ul.commentlist li {
-	border-top-style: solid;
-	border-top-width: 1px;
 	display: block;
 }
 
@@ -1100,7 +1098,7 @@ li.newupdates, li.newcomment {
 }
 
 #main {
-	background: #fff;
+	background: #E9ECF2;
 }
 
 #postbox {

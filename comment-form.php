@@ -40,8 +40,7 @@
 			<?php do_action( 'comment_form' ); ?>
 	
 	        <div>
-	            <!--<input id="comment-submit" name="submit" type="submit" value="<?php esc_attr_e( 'Reply', 'p2' ); ?>" />-->
-	            <a href="javascript://" id="comment-submit" class="p2_button" value="<?php esc_attr_e( 'Reply', 'p2' ); ?>"><?php esc_attr_e( 'Reply', 'p2' ); ?></a>
+	            <input id="comment-submit" name="submit" type="submit" value="<?php esc_attr_e( 'Reply', 'p2' ); ?>" />
 	            <?php echo cancel_comment_reply_link('Cancel') ?>
 	            <?php comment_id_fields() ?>&nbsp;
 	            

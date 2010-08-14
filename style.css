@@ -280,7 +280,7 @@ position: static;
 }
 
 #main ul#postlist > li .pf {
-  padding: 5px;
+  padding: 5px 8px;
   background-color: #D1DDEF;
   
   -webkit-border-bottom-right-radius: 3px;
@@ -1140,6 +1140,7 @@ li.newupdates, li.newcomment {
 
 .sleeve_main {
 	background: transparent;
+	border-right: 1px solid #043D56;
 }
 
 #main {
@@ -1221,6 +1222,7 @@ h4, h5, h6 {
 }
 #postbox {
 	font-size: 14px;
+	border-bottom: 1px solid #043D56;
 }
 #postbox .inputarea {
 	font-size: 12px;

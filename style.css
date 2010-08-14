@@ -837,7 +837,14 @@ div.entry {
 #post-types {
 	margin-left: 60px;
 	margin-bottom: 0px;
-	height: 22px;
+}
+
+#post-types:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
 }
 
 #post-types li {
@@ -847,7 +854,6 @@ div.entry {
 #post-types li a {
   color:#333333 !important;
   cursor:pointer;
-  display:inline-block;
   font-size:12px;
   line-height:1.45em;
   margin-top:5px !important;

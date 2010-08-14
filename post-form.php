@@ -40,7 +40,7 @@ jQuery(document).ready(function() {
 
 			<form id="new_post" name="new_post" method="post" action="<?php echo site_url(); ?>/">
 			  <div id="postbox-full">
-  				<div id="postbox-type-post" class="post-input <?php if ( 'post' == p2_get_posting_type() ) echo ' selected'; ?>">
+  				<div id="postbox-type-post" class="post-input <?php if ( 'issue' == p2_get_posting_type() ) echo ' selected'; ?>">
   					<input type="text" name="posttitle" id="posttitle" tabindex="1" value=""
   						onfocus="this.value=(this.value=='<?php echo esc_js( __( 'Post Title', 'p2' ) ); ?>') ? '' : this.value;"
   						onblur="this.value=(this.value=='') ? '<?php echo esc_js( __( 'Post Title', 'p2' ) ); ?>' : this.value;" />

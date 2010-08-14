@@ -480,7 +480,9 @@ jQuery(function($) {
 			case "post" :
 				var thisPostEditArea;
 				if (inlineEditPosts != 0 && isUserLoggedIn) {
+				  console.log($(element));
 					thisPostEditArea = $(element).children('div.editarea').eq(0);
+					console.log(thisPostEditArea);
 					jQuery(element).find('a.edit-post-link:first').click(function() {
 						thisPostEditArea.trigger('edit');
 						return false;

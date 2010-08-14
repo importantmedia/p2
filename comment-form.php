@@ -1,9 +1,8 @@
-		<small id="cancel-comment-reply">
+  <b>
 	    	<?php if ( is_user_logged_in() ) : ?>
 	    		<?php printf( __( '<a href="%1$s">%2$s</a>', 'p2' ), site_url( '/wp-admin/profile.php' ), p2_get_user_identity() ); ?> 
 	    	<?php endif; ?>
-		</small>
-	</h3>
+	</b>
 	
 	<?php if ( get_option( 'comment_registration' ) && !is_user_logged_in() ) : ?>
 
@@ -42,7 +41,7 @@
 	
 	        <div>
 	            <input id="comment-submit" name="submit" type="submit" value="<?php esc_attr_e( 'Reply', 'p2' ); ?>" />
-	            <?php echo cancel_comment_reply_link() ?>
+	            <?php echo cancel_comment_reply_link('Cancel') ?>
 	            <?php comment_id_fields() ?>&nbsp;
 	            
 				<span class="progress">

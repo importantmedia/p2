@@ -1027,6 +1027,9 @@ h3 {
 #main span.meta {
 	color: #888;
 }
+#main span.meta span.category {
+	text-transform: capitalize;
+}
 .sleeve_main {
 	background: #fff;
 }

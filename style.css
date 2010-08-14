@@ -854,11 +854,20 @@ div.entry {
   padding:0px 8px;
   text-decoration:none !important;
   background:url("./i/white-grad.png") repeat-x scroll 0 0 #F2F2F2;
-  border-color:#CCCCCC;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #ccc;
   text-shadow: 0 1px 0 #FFFFFF;
-  border-width: 1px 1px 1px 0;
   display: block;
 }
+#post-types li a:first-child {
+  border-left: 1px solid #ccc;
+}
+
+#post-types li a:hover {
+  border: 1px solid #aaa;
+}
+
 #post-types li a:active {
 
 }
